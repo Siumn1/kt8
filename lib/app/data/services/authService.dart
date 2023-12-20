@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:get/get.dart';
-import 'package:kt8/core/constants.dart';
-import 'package:kt8/app/data/models/tokens/jwtModel.dart';
+import 'package:kt8/app/constants.dart';
+import 'package:kt8/app/data/models/tokens/jwt_model.dart';
 import 'package:kt8/app/data/services/storageService.dart';
 import 'package:kt8/app/routes/app_pages.dart';
 

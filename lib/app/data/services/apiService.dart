@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:dio/dio.dart';
 import 'package:get/get.dart';
-import 'package:kt8/core/constants.dart';
+import 'package:kt8/app/constants.dart';
 import 'package:kt8/app/data/services/authService.dart';
 import 'package:kt8/app/data/services/storageService.dart';
 

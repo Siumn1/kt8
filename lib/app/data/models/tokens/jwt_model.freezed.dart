@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
-part of 'jwtModel.dart';
+part of 'jwt_model.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -20,7 +20,7 @@ JwtModel _$JwtModelFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$JwtModel {
-  String get accessToken => throw _privateConstructorUsedError;
+  String? get accessToken => throw _privateConstructorUsedError;
   String get refreshToken => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -34,7 +34,7 @@ abstract class $JwtModelCopyWith<$Res> {
   factory $JwtModelCopyWith(JwtModel value, $Res Function(JwtModel) then) =
       _$JwtModelCopyWithImpl<$Res, JwtModel>;
   @useResult
-  $Res call({String accessToken, String refreshToken});
+  $Res call({String? accessToken, String refreshToken});
 }
 
 /// @nodoc
@@ -50,14 +50,14 @@ class _$JwtModelCopyWithImpl<$Res, $Val extends JwtModel>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? accessToken = null,
+    Object? accessToken = freezed,
     Object? refreshToken = null,
   }) {
     return _then(_value.copyWith(
-      accessToken: null == accessToken
+      accessToken: freezed == accessToken
           ? _value.accessToken
           : accessToken // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       refreshToken: null == refreshToken
           ? _value.refreshToken
           : refreshToken // ignore: cast_nullable_to_non_nullable
@@ -74,7 +74,7 @@ abstract class _$$JwtModelImplCopyWith<$Res>
       __$$JwtModelImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({String accessToken, String refreshToken});
+  $Res call({String? accessToken, String refreshToken});
 }
 
 /// @nodoc
@@ -88,14 +88,14 @@ class __$$JwtModelImplCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? accessToken = null,
+    Object? accessToken = freezed,
     Object? refreshToken = null,
   }) {
     return _then(_$JwtModelImpl(
-      null == accessToken
+      freezed == accessToken
           ? _value.accessToken
           : accessToken // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       null == refreshToken
           ? _value.refreshToken
           : refreshToken // ignore: cast_nullable_to_non_nullable
@@ -113,7 +113,7 @@ class _$JwtModelImpl implements _JwtModel {
       _$$JwtModelImplFromJson(json);
 
   @override
-  final String accessToken;
+  final String? accessToken;
   @override
   final String refreshToken;
 
@@ -123,7 +123,7 @@ class _$JwtModelImpl implements _JwtModel {
   }
 
   @override
-  bool operator ==(Object other) {
+  bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$JwtModelImpl &&
@@ -152,14 +152,14 @@ class _$JwtModelImpl implements _JwtModel {
 }
 
 abstract class _JwtModel implements JwtModel {
-  factory _JwtModel(final String accessToken, final String refreshToken) =
+  factory _JwtModel(final String? accessToken, final String refreshToken) =
       _$JwtModelImpl;
 
   factory _JwtModel.fromJson(Map<String, dynamic> json) =
       _$JwtModelImpl.fromJson;
 
   @override
-  String get accessToken;
+  String? get accessToken;
   @override
   String get refreshToken;
   @override
